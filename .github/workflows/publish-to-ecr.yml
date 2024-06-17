@@ -21,6 +21,7 @@ jobs:
         with:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}.
           aws-secret-access-key: ${{ secrets.AWS_ACCESS_KEY_SECRET }}
+          role-to-assume: "arn:aws:iam::590183981173:role/DSI_ROLE_AdministratorAccess"
           aws-region: "eu-west-3"
 
       - name: Login to Amazon ECR
